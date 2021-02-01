@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pricing Table with 3D Tilt Hover Effects In Bootstrap 5 and Tilt.js</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style type="text/css">
+      .content{
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      }
+      .col-md-4:nth-child(2) .content{
+      background: #ffa200;
+      color: #fff;
+      }
+      .col-md-4:nth-child(2) .content p{
+      color: #fff;
+      }
+      .content:hover{
+      background: #ffa200;
+      }
+      .content:hover p,.content:hover h2,.content:hover h3{
+      color: #fff;
+      }
+      h3,h2{
+      text-align: center;
+      }
+      h3{
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 700;
+      }
+      h2{
+      font-size:36px;
+      font-weight: 700;
+      }
+      p{
+      margin:0;
+      color: #919191;
+      text-align: center;
+      padding: 10px;
+      text-transform: capitalize;
+      font-size: 22px;
+      }
+      span{
+      font-size: 18px;
+      padding-right: 1px;
+      }
+      .btn-dark{
+      display: block;
+      margin: 10px auto;
+      width: 65%;
+      padding: 10px;
+      border-radius: 400px;
+      font-weight: 600;
+      }
+      .btn-dark:hover{
+      background: #fff;
+      color: #000;
+      }
+      @media(max-width: 992px){
+      h3{
+      font-size: 30px;
+      }
+      }
+      @media(max-width: 768px){
+      .content{
+      margin: 20px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-4" data-tilt>
+          <div class="content">
+            <h3>Silver</h3>
+            <h2 class="pt-4"><span>$</span>19</h2>
+            <p>Design</p>
+            <p>space</p>
+            <p>services</p>
+            <p>management</p>
+            <button type="button" class="btn btn-dark">Buy</button>
+          </div>
+        </div>
+        <div class="col-md-4" data-tilt>
+          <div class="content">
+            <h3>Gold</h3>
+            <h2 class="pt-4"><span>$</span>29</h2>
+            <p>Design</p>
+            <p>space</p>
+            <p>services</p>
+            <p>management</p>
+            <button type="button" class="btn btn-dark">Buy</button>
+          </div>
+        </div>
+        <div class="col-md-4" data-tilt>
+          <div class="content">
+            <h3>Platinum</h3>
+            <h2 class="pt-4"><span>$</span>39</h2>
+            <p>Design</p>
+            <p>space</p>
+            <p>services</p>
+            <p>management</p>
+            <button type="button" class="btn btn-dark">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+  </body>
+</html>
